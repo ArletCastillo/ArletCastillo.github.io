@@ -9,20 +9,22 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-/*.container {
-	position: relative;
-	/* border: 3px solid black; 
-	height: 100%;
-} */
-
-/* .container div{
-	/* border: 3px solid black; 
+div[class^="col-"]{
+	border: 1px solid #AAA;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: white;
 	position: absolute;
-    top: 40%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-} */ 
+	top: 55%;
+}
+
+#caja1 {
+	left: 33.5%;
+}
+
+#caja2 {
+	right: 33.5%;
+}
 
 h1 {
 	text-align: center;
@@ -32,18 +34,12 @@ h1 {
 	margin: 0 auto;
 }
 
-img {
-	/* position: relative; */
-	height: 15%;
-	width: 15%;
-}
-
 #centre {
 	position: absolute;
     top: 40%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 /********** Large devices only **********/
