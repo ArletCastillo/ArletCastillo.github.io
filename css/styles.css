@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/city_landscape.png);
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	position: relative;
+	/* border: 3px solid black; */
+	height: 100%;
+}
+
+.container div{
+	/* border: 3px solid black; */
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+} 
+
+h1 {
+	text-align: center;
+	color: #ffd5e8;
+	font-weight: bold;
+	font-size: 250%;
+	margin: 0 auto;
+}
+
+img {
+	position: relative;
+	height: 15%;
+	width: 15%;
+}
+
+#right-heart {
+	float: right;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	body {
+		background-size: cover;
+	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	body {
+		background-size: cover;
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	body {
+		background-size: cover;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	body {
+		background-size: cover;
+	}
+}
