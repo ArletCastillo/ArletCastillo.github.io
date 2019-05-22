@@ -23,18 +23,11 @@ h1 {
 	
 }
 
-h2 {
-	text-align: center;
-	color: #ffd5e8;
-	font-weight: bold;
-}
-
 a {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 180%;
 	text-align: center;
 	font-weight: bold;
-	float: right;
 }
 
 a:link, a:visited {
@@ -59,6 +52,14 @@ div .field{
     margin-right: -50%;
     transform: translate(-50%, -50%);
 } 
+
+div > a {
+	margin-right: 5em;
+}
+
+div > #second-link {
+	margin-right: 3em;
+}
 
 /*
 #centre {

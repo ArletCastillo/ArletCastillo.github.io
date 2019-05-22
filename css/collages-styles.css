@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffd5e8;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: purple;
+	font-weight: bold;
+	font-size: 250%;
+	padding-top: 3%;
+}
+
+img {
+	width: 20%;
+	height: 20%;
+}
