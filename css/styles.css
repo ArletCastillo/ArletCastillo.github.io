@@ -9,38 +9,65 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-div[class^="col-"]{
-	border: 1px solid #AAA;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: white;
-	position: absolute;
-	top: 55%;
-}
-
-#caja1 {
-	left: 33.5%;
-}
-
-#caja2 {
-	right: 33.5%;
-}
-
 h1 {
 	text-align: center;
 	color: #ffd5e8;
 	font-weight: bold;
 	font-size: 250%;
 	margin: 0 auto;
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	
 }
 
+h2 {
+	text-align: center;
+	color: #ffd5e8;
+	font-weight: bold;
+}
+
+a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 180%;
+	text-align: center;
+	font-weight: bold;
+	float: right;
+}
+
+a:link, a:visited {
+  color: #ffd5e8;
+}
+
+a:hover {
+  color: violet;
+}
+
+#div-hearts {
+	position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div .field{
+	position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+} 
+
+/*
 #centre {
 	position: absolute;
     top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
