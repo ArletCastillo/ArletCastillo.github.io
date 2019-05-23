@@ -20,3 +20,11 @@ img[class^="img-size"] {
 	height: 20%;
 	border-radius: 10px;
 }
+
+p {
+	color: purple;
+}
+
+a:hover {
+	text-decoration-color: purple;
+}

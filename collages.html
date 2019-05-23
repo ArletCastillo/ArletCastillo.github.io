@@ -6,32 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title> 👼🏽 C Y B E R A N G E L 👼🏽 </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/collages-styles.css">
-
-	<script type="text/javascript">
-		$(function(){
-      		$("#test, #img-2").click(function(){
-        		$(".basic").modal('show');
-      		});
-      		$(".basic").modal({
-        		closable: true
-      		});
-    	});
-
-    	$(function(){
-      		$("#img-3").click(function(){
-        		(".ui.modal").modal('show');
-      		});
-      		(".ui.modal").modal({
-        		closable: true
-      		});
-    	});
-
-	</script>
-
 </head>
 <body>
 	<div class="ui container">
@@ -43,23 +22,37 @@
   			<img src="images/translucid_heart.png" alt="Translucid Heart Right">
 		</div>
 
-		<img src="images/NY.jpg" id="test" class="img-size">
-			<div class="ui modal basic">
-  				<div class="image content">
-    				<img src="images/NY.jpg">
-  				</div>
-  				<div class="description">
-  					<h3>NEW YORK CITY</h3><p>08-31-17</p>
-  				</div>
-			</div>
-				
-		<img src="images/NY_2.jpg" id="img-2" class="img-size">
-
-		<img src="images/lemons.jpg" id=img-3 class="img-size">
-
-		<img src="images/pink.JPG" id=img-3 class="img-size">
+		<!-- Lightbox content -->
+		<div class="row justify-content-center">
+    		<div class="row">
+    		    <a href="images/NY.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-6 col-lg-3">
+    		        <img src="images/NY.jpg" class="img-fluid">	
+    		        <p>NEW YORK CITY pt.1<br>08-31-17</p>	
+    		    </a>		
+    		    <a href="images/NY_2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-6 col-lg-3">
+    		    	<img src="images/NY_2.jpg" class="img-fluid">	
+    		    	<p>NEW YORK CITY pt.2<br>08-31-17</p>	
+    		    </a>	
+    		    <a href="images/pink.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-6 col-lg-3">
+    		        <img src="images/pink.jpg" class="img-fluid">		
+    		        <p>UNTITLED<br>08-31-17</p>	
+    		    </a>		
+    		    <a href="images/lemons.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-6 col-lg-3">
+    		        <img src="images/lemons.jpg" class="img-fluid">	
+    		        <p>UNTITLED<br>07-17-16</p>	
+    		    </a>			
+    		</div>		
+    	</div>
 
 	</div>
+
+	<script type="text/javascript">
+		//Lightbox action
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+	</script>
 
 </body>
 </html>
