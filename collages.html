@@ -13,7 +13,7 @@
 
 	<script type="text/javascript">
 		$(function(){
-      		$("#test").click(function(){
+      		$("#test, #img-2").click(function(){
         		$(".basic").modal('show');
       		});
       		$(".basic").modal({
@@ -22,13 +22,14 @@
     	});
 
     	$(function(){
-      		$("#img-2").click(function(){
-        		$(".basic").modal('show');
+      		$("#img-3").click(function(){
+        		(".ui.modal").modal('show');
       		});
-      		$(".basic").modal({
+      		(".ui.modal").modal({
         		closable: true
       		});
     	});
+
 	</script>
 
 </head>
@@ -48,20 +49,16 @@
     				<img src="images/NY.jpg">
   				</div>
   				<div class="description">
-  					<h3>bla bla bla</h3>
+  					<h3>NEW YORK CITY</h3><p>08-31-17</p>
   				</div>
 			</div>
-
+				
 		<img src="images/NY_2.jpg" id="img-2" class="img-size">
-			<div class="ui modal basic">
-  				<div class="image content">
-    				<img src="images/NY_2.jpg">
-  				</div>
-  				<div class="description">
-  					<h3>bla bla bla</h3>
-  				</div>
-			</div>
-		
+
+		<img src="images/lemons.jpg" id=img-3 class="img-size">
+
+		<img src="images/pink.JPG" id=img-3 class="img-size">
+
 	</div>
 
 </body>
