@@ -15,7 +15,8 @@ h1 {
 	padding-top: 3%;
 }
 
-img {
+img[class^="img-size"] {
 	width: 20%;
 	height: 20%;
+	border-radius: 10px;
 }

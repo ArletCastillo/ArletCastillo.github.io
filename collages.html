@@ -10,6 +10,27 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/collages-styles.css">
+
+	<script type="text/javascript">
+		$(function(){
+      		$("#test").click(function(){
+        		$(".basic").modal('show');
+      		});
+      		$(".basic").modal({
+        		closable: true
+      		});
+    	});
+
+    	$(function(){
+      		$("#img-2").click(function(){
+        		$(".basic").modal('show');
+      		});
+      		$(".basic").modal({
+        		closable: true
+      		});
+    	});
+	</script>
+
 </head>
 <body>
 	<div class="ui container">
@@ -21,8 +42,25 @@
   			<img src="images/translucid_heart.png" alt="Translucid Heart Right">
 		</div>
 
-		<img src="images/NY.jpg">
-		<img src="images/NY_2.jpg">
+		<img src="images/NY.jpg" id="test" class="img-size">
+			<div class="ui modal basic">
+  				<div class="image content">
+    				<img src="images/NY.jpg">
+  				</div>
+  				<div class="description">
+  					<h3>bla bla bla</h3>
+  				</div>
+			</div>
+
+		<img src="images/NY_2.jpg" id="img-2" class="img-size">
+			<div class="ui modal basic">
+  				<div class="image content">
+    				<img src="images/NY_2.jpg">
+  				</div>
+  				<div class="description">
+  					<h3>bla bla bla</h3>
+  				</div>
+			</div>
 		
 	</div>
 
