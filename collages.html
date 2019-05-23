@@ -6,11 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title> 👼🏽 C Y B E R A N G E L 👼🏽 </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/collages-styles.css">
+
+	<script type="text/javascript">
+		//Lightbox action
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+			event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+	</script>
+
 </head>
 <body>
 	<div class="ui container">
@@ -25,20 +37,20 @@
 		<!-- Lightbox content -->
 		<div class="row justify-content-center">
     		<div class="row">
-    		    <a href="images/NY.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-6 col-lg-3">
-    		        <img src="images/NY.jpg" class="img-fluid">	
+    		    <a href="images/NY.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-6 col-lg-3">
+    		        <img src="images/NY.jpg" class="img-fluid rounded">	
     		        <p>NEW YORK CITY pt.1<br>08-31-17</p>	
     		    </a>		
-    		    <a href="images/NY_2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-6 col-lg-3">
-    		    	<img src="images/NY_2.jpg" class="img-fluid">	
+    		    <a href="images/NY_2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-6 col-lg-3">
+    		    	<img src="images/NY_2.jpg" class="img-fluid rounded">	
     		    	<p>NEW YORK CITY pt.2<br>08-31-17</p>	
     		    </a>	
-    		    <a href="images/pink.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-6 col-lg-3">
-    		        <img src="images/pink.jpg" class="img-fluid">		
+    		    <a href="images/pink.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-6 col-lg-3">
+    		        <img src="images/pink.jpg" class="img-fluid rounded">		
     		        <p>UNTITLED<br>08-31-17</p>	
     		    </a>		
-    		    <a href="images/lemons.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-6 col-lg-3">
-    		        <img src="images/lemons.jpg" class="img-fluid">	
+    		    <a href="images/lemons.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-6 col-lg-3">
+    		        <img src="images/lemons.jpg" class="img-fluid rounded">	
     		        <p>UNTITLED<br>07-17-16</p>	
     		    </a>			
     		</div>		
@@ -46,13 +58,7 @@
 
 	</div>
 
-	<script type="text/javascript">
-		//Lightbox action
-		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-	</script>
+	
 
 </body>
 </html>
